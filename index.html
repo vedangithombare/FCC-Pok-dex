@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokédex</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="mainTitle">
+            <h1>Pokédex</h1>
+        </div>
+        <div class="pokemonSearch">
+            <form action="">
+                <label for="search-input">Search for Pokémon Name or ID:</label>
+                <div class="searchDiv">
+                    <input type="text" id="search-input" required />
+                    <button id="search-button">Search</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="showPokemon">
+            <div class="pokemonFeatures">
+                <div class="pokemonName">
+                    <!-- POKEMON NAME AND ID -->
+                    Name:<span id="pokemon-name"></span>
+                    id:<span id="pokemon-id"></span>
+                </div>
+                <div class="pokemonChar">
+                    <!-- POKEMON WEIGHT AND HEIGHT -->
+                    Weight:<span id="weight"></span>
+                    Height: <span id="height"> </span>
+                </div>
+                <!-- INSERST POKEMON IMG -->
+                <div class="pokemonImg" id="pokemonImg">
+                </div>
+                <div class="types" id="types">
+                    <!-- INSERT POKEMON TYPES -->
+                </div>
+            </div>
+        </div>
+
+        <div class="powers">
+            <div class="powHeading">
+                <div class="innerpow1" id="base">Base</div>
+                <div class="innerpow" id="stats">Stats</div>
+            </div>
+
+            <div class="powContent">
+                <div class="innerpow1" id="hpTitle">HP</div>
+                <div class="innerpow" id="hp"></div>
+            </div>
+
+            <div class="powContent">
+                <div class="innerpow1" id="attackTitle">Attack</div>
+                <div class="innerpow" id="attack"></div>
+            </div>
+
+            <div class="powContent">
+                <div class="innerpow1" id="defenseTitle">Defense</div>
+                <div class="innerpow" id="defense"></div>
+            </div>
+
+            <div class="powContent">
+                <div class="innerpow1" id="specialAttackTitle">Special Attack</div>
+                <div class="innerpow" id="special-attack"></div>
+            </div>
+
+            <div class="powContent">
+                <div class="innerpow1" id="specialDefenseTitle">Special Defense</div>
+                <div class="innerpow" id="special-defense"></div>
+            </div>
+
+
+            <div class="powContent">
+                <div class="innerpow1" id="speedTitle">Speed</div>
+                <div class="innerpow" id="speed"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
